@@ -12,9 +12,9 @@
   "mixins": [
     "ContainerMinecartEntityMixin",
     "DamageSourcePredicateMixin",
-    "DeployerTileEntityMixin",
+    "DeployerBlockEntityMixin",
     "EntityPredicateMixin",
-    "InWorldProcessingMixin",
+    "RecipeApplierMixin",
     "ItemEntityMixin",
     "ItemFrameMixin",
     "PlayerInteractionManagerMixin",

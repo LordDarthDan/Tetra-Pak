@@ -53,7 +53,7 @@ side = "BOTH"
 [[dependencies.tetrapak]]
 modId = "create"
 mandatory = false
-versionRange = "[0.5.0.d,)"
+versionRange = "[0.5.1.f,)"
 ordering = "NONE"
 side = "BOTH"
 

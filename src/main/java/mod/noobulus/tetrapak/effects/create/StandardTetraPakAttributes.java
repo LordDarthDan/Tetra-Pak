@@ -1,6 +1,6 @@
 package mod.noobulus.tetrapak.effects.create;
 
-import com.simibubi.create.content.logistics.item.filter.ItemAttribute;
+import com.simibubi.create.content.logistics.filter.ItemAttribute;
 import mod.noobulus.tetrapak.BuildConfig;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;

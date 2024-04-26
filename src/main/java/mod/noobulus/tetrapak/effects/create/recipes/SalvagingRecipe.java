@@ -1,8 +1,8 @@
 package mod.noobulus.tetrapak.effects.create.recipes;
 
 import com.google.gson.JsonObject;
-import com.simibubi.create.content.contraptions.components.deployer.DeployerFakePlayer;
-import com.simibubi.create.content.contraptions.components.deployer.DeployerTileEntity;
+import com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer;
+import com.simibubi.create.content.kinetics.deployer.DeployerBlockEntity;
 import mod.noobulus.tetrapak.BuildConfig;
 import mod.noobulus.tetrapak.TetraPak;
 import mod.noobulus.tetrapak.util.LootLoader;
@@ -153,13 +153,13 @@ public class SalvagingRecipe implements Recipe<Container> {
 	}
 
 	public static class DeployerAwareInventory extends RecipeWrapper {
-		public final DeployerTileEntity deployerTileEntity;
+		public final DeployerBlockEntity deployerBlockEntity;
 		public final DeployerFakePlayer deployerFakePlayer;
 		public final Consumer<List<Item>> onRecipeApply;
 
-		public DeployerAwareInventory(IItemHandlerModifiable inv, DeployerTileEntity deployerTileEntity, DeployerFakePlayer deployerFakePlayer, Consumer<List<Item>> onRecipeApply) {
+		public DeployerAwareInventory(IItemHandlerModifiable inv, DeployerBlockEntity deployerBlockEntity, DeployerFakePlayer deployerFakePlayer, Consumer<List<Item>> onRecipeApply) {
 			super(inv);
-			this.deployerTileEntity = deployerTileEntity;
+			this.deployerBlockEntity = deployerBlockEntity;
 			this.deployerFakePlayer = deployerFakePlayer;
 			this.onRecipeApply = onRecipeApply;
 		}

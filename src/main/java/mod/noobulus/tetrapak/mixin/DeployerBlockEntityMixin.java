@@ -1,7 +1,7 @@
 package mod.noobulus.tetrapak.mixin;
 
-import com.simibubi.create.content.contraptions.components.deployer.DeployerFakePlayer;
-import com.simibubi.create.content.contraptions.components.deployer.DeployerTileEntity;
+import com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer;
+import com.simibubi.create.content.kinetics.deployer.DeployerBlockEntity;
 import mod.noobulus.tetrapak.effects.create.recipes.SalvagingRecipe;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -18,9 +18,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Mixin(DeployerTileEntity.class)
-public class DeployerTileEntityMixin {
-	private final DeployerTileEntity self = (DeployerTileEntity) (Object) this;
+@Mixin(DeployerBlockEntity.class)
+public class DeployerBlockEntityMixin {
+	private final DeployerBlockEntity self = (DeployerBlockEntity) (Object) this;
 	public List<Item> lastProduced = new ArrayList<>();
 	@Shadow(remap = false)
 	protected DeployerFakePlayer player;
